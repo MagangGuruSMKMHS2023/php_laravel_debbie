@@ -22,6 +22,7 @@
         <td>Kursi</td>
         <td>Meja</td>
         <td>Gambar</td>
+        <td>Aksi</td>
     </tr>
     <?php foreach($kelas as $gr) : ?>
     <tr>
