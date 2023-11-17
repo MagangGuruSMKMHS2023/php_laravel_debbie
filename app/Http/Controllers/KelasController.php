@@ -71,11 +71,11 @@ public function update (Request $request, $id_kelas){
         'ketuakelas' => 'required',
         'kursi' => 'required',
         'meja'=> 'required',
-        'gambar_kelas' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+        'gambar_kelas' => 'image|mimes:jpeg,png,jpg,gif',
     ]);
 
     if ($request->hasFile('gambar_kelas')){
-        $gambar_kelas = $request->file('gambar kelas');
+        $gambar_kelas = $request->file('gambar_kelas');
         $gambar_kelas_name = time() . '.' . $gambar_kelas->getClientOriginalExtension();
         $gambar_kelas->move(public_path('upload_gambar'), $gambar_kelas_name);
         $kelas->gambar_kelas = $gambar_kelas_name;
