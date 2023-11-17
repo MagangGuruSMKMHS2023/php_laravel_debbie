@@ -1,4 +1,4 @@
-@include('includes. header')
+@include('includes._header')
 <form action="/cari" method="get">
     <label for="cari">Cari Data</label>
     <input type="text" id="cari" name="cari">
