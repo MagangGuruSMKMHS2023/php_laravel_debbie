@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <title>Data Tambah Kelas</title>
 </head>
 <body>
-    <h1>Create Kelas</h1>
+    <h1 class="text-2xl font-bold text-fuchsia-800 text-center">Create Kelas</h1>
     @if($errors->any())
         {{ implode('', $errors->all('<div>:message</div>')) }}
     @endif
