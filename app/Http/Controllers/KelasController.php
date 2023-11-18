@@ -62,9 +62,7 @@ public function edit($id_kelas){
 
 public function update (Request $request, $id_kelas){
     $kelas = Kelas::find($id_kelas);
-   // $kelas->update($request->except(['_token','submit']));
-    //return redirect ("/kelas");
-
+   
     $this->validate($request, [
         'namakelas' => 'required',
         'walikelas' => 'required',
