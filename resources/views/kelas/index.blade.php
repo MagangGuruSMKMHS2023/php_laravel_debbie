@@ -10,12 +10,12 @@
  
 @include('includes._header')
 <form action="/cari" method="get">
-    <label for="cari" class="p-1 ml-10">Cari Data</label>
-    <input type="text" id="cari" name="cari">
-    <button type="submit" class="bg-purple-600 p-1 text-zinc-300 text-bold inline-block ml-10 rounded shadow hover:bg-purple-900">Search</button>
+    <label for="cari" class="p-1 ml-8"></label>
+    <input type="text" placeholder="Cari Data" class="px-2 py-2 bg-violet-200 mt-3 rounded-full placeholder:text-zinc-500 placeholder:font-bold" id="cari" name="cari">
+    <button type="submit" class="bg-purple-600 p-1 text-zinc-300 px-3 font-semibold inline-block ml-10 rounded shadow hover:bg-purple-900 focus:ring-purple-300">Search</button>
 </form>
 
-<a href="kelas/create" class="bg-purple-600 p-1 text-zinc-300 text-bold inline-block ml-10 rounded shadow hover:bg-purple-900" >Tambah</a>
+<a href="kelas/create" class="bg-purple-600 p-1 text-zinc-300 font-semibold inline-block mt-3 ml-10 px-3 rounded shadow hover:bg-purple-900" >Tambah</a>
 @if (\Session::has('success'))
     <div class="alert alert-success">
         <ul>
@@ -23,7 +23,7 @@
         </ul>
     </div>
 @endif
-<table class="border-collapse border border-slate-400 m-10">
+<table class="border-collapse border mt-3 border-slate-400 m-10">
 <thead>    
  <tr>
         <th class="border p-4 border-slate-300 bg-slate-300 font-semibold">Id Kelas</th>

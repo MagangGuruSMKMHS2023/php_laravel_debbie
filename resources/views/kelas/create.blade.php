@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    @vite('resources/css/app.css')
     <title>Data Tambah Kelas</title>
 </head>
-<body>
+<body> 
+<div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p5 shadow-md">
     <h1 class="text-2xl font-bold text-fuchsia-800 text-center">Create Kelas</h1>
     @if($errors->any())
         {{ implode('', $errors->all('<div>:message</div>')) }}
@@ -39,11 +40,11 @@
                 <td><input type="file" name="gambar_kelas" class="form-control" accept="image/*"required></td>
             </tr>
         </table>  
-        <button type="submit" class="btn btn-primary">Submit</button>  
+        <button type="submit" class="bg-purple-600 px-5 py-2 rounded-full text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 ">Submit</button>  
     </form>   
     <form action="/kelas">
-        @csrf
-        <button type="submit" class="btn btn-primary">Back</button>  
+         <button type="submit" class="bg-purple-600 mt-3 px-5 py-2 rounded-full text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600">Back</button>  
     </form> 
+    </div>    
 </body>
 </html>
