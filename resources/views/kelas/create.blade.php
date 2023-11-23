@@ -7,7 +7,7 @@
     <title>Data Tambah Kelas</title>
 </head>
 <body> 
-<div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p5 shadow-md">
+<div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p5 shadow-lg">
     <h1 class="text-2xl font-bold text-fuchsia-800 text-center">Create Kelas</h1>
     @if($errors->any())
         {{ implode('', $errors->all('<div>:message</div>')) }}
@@ -16,24 +16,24 @@
         @csrf 
         <table class="table">
             <tr>
-                <td><label for="namakelas">Nama Kelas </label></td>
-                <td><input type="text" name="namakelas" class="form-control" required></td>
+            <td><label for="namakelas"></label></td>
+                <td><input type="text" placeholder="Nama Kelas" name="namakelas" class="mt-7 mb-1 px-3 py-2 border shadow rounded w-full block text-m focus:outline-none focus:ring-1 focus:ring-purple-400 " required></td>
             </tr>
             <tr>
-                <td><label for="walikelas">Nama Wali Kelas </label></td>
-                <td><input type="text" name="walikelas" class="form-control" required></td>
+                <td><label for="walikelas"></label></td>
+                <td><input type="text" placeholder="Wali Kelas" name="walikelas" class="mb-1 px-3 py-2 border shadow rounded w-full block text-m focus:outline-none focus:ring-1 focus:ring-purple-400" required></td>
             </tr>
             <tr>
-                <td><label for="ketuakelas">Ketua Kelas </label></td>
-                <td><input type="text" name="ketuakelas" class="form-control" required></td>
+                <td><label for="ketuakelas"></label></td>
+                <td><input type="text" placeholder="Ketua Kelas" name="ketuakelas" class="mb-1 px-3 py-2 border shadow rounded w-full block text-m focus:outline-none focus:ring-1 focus:ring-purple-400" required></td>
             </tr>
             <tr>
-                <td><label for="kursi">Jumlah Kursi </label></td>
-                <td><input type="number" name="kursi" class="form-control" required></td>
+                <td><label for="kursi"></label></td>
+                <td><input type="number" placeholder="Jumlah Kursi" name="kursi" class="mb-1 px-3 py-2 border shadow rounded w-full block text-m focus:outline-none focus:ring-1 focus:ring-purple-400" required></td>
             </tr>
             <tr>
-                <td><label for="meja">Jumlah Meja </label></td>
-                <td><input type="number" name="meja" class="form-control" required></td>
+                <td><label for="meja"></label></td>
+                <td><input type="number" placeholder="Jumlah Meja" name="meja" class="mb-1 px-3 py-2 border shadow rounded w-full block text-m focus:outline-none focus:ring-1 focus:ring-purple-400" required></td>
             </tr>
             <tr>
                 <td><label for="gambar_kelas">Gambar Kelas </label></td>

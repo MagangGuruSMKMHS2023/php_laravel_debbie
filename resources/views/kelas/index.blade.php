@@ -11,7 +11,7 @@
 @include('includes._header')
 <form action="/cari" method="get">
     <label for="cari" class="p-1 ml-8"></label>
-    <input type="text" placeholder="Cari Data" class="px-2 py-2 bg-violet-200 mt-3 rounded-full placeholder:text-zinc-500 placeholder:font-bold" id="cari" name="cari">
+    <input type="text" placeholder="Cari Data" class="px-2 py-2 bg-violet-200 mt-3 rounded-full placeholder:text-zinc-500 placeholder:font-normal" id="cari" name="cari">
     <button type="submit" class="bg-purple-600 p-1 text-zinc-300 px-3 font-semibold inline-block ml-10 rounded shadow hover:bg-purple-900 focus:ring-purple-300">Search</button>
 </form>
 
