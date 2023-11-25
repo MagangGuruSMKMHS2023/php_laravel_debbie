@@ -16,7 +16,7 @@
         @csrf 
         <table class="table mx-auto">
             <tr>
-            <td><label for="namakelas"></label></td>
+             <td><label for="namakelas"></td></label>
                 <td><input type="text" placeholder="Nama Kelas" name="namakelas" class="mt-7 mb-1 px-3 py-2 border shadow rounded w-full block text-m focus:outline-none focus:ring-1 focus:ring-purple-400 " required></td>
             </tr>
             <tr>
