@@ -11,8 +11,8 @@
 @include('includes._header')
 <form action="/cari" method="get">
     <label for="cari" class="p-1 ml-8"></label>
-    <input type="text" placeholder="Cari Data" class="px-2 py-2 bg-violet-200 rounded-full placeholder:text-zinc-500 placeholder:font-normal" id="cari" name="cari">
-    <button type="submit" class="bg-purple-600 p-1 text-zinc-300 px-3 font-semibold inline-block ml-10 rounded shadow hover:bg-purple-900 focus:ring-purple-300">Search</button>
+    <input type="text" placeholder="Cari Data" class="px-2 py-2 bg-violet-200 rounded-full focus:outline-none focus:ring-1 focus:ring-purple-300 placeholder:text-zinc-500 placeholder:font-normal" id="cari" name="cari">
+    <button type="submit" class="bg-purple-600 p-1 text-zinc-300 px-3 font-semibold inline-block ml-6 rounded shadow hover:bg-purple-900 focus:ring-purple-300">Search</button>
 </form>
 
 <a href="kelas/create" class="bg-purple-600 p-1 text-zinc-300 font-semibold inline-block mt-3 ml-10 px-3 rounded shadow hover:bg-purple-900" >Tambah</a>
