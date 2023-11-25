@@ -12,9 +12,9 @@
     <form action="/kelas/{{ $kelas->id_kelas}}" method="post" enctype="multipart/form-data">
         @method("put")
         @csrf 
-        <table class="table mx-auto">
+        <table class="table w-80 mx-auto">
             <tr>
-                <td><label for="id_kelas"></label></td>
+            <td><label for="id_kelas"></label></td>
                 <td><input type="text" name="id_kelas" class="mt-5 mb-1 px-3 py-2 border shadow rounded w-full block text-m focus:outline-none focus:ring-1 focus:ring-purple-400 " style="background-color:pink;" value="{{$kelas->id_kelas}}" readonly></td>
             </tr>
             <tr>
@@ -48,15 +48,17 @@
             </tr>
             <tr>
                 <td><label for="gambar_kelas"></label></td>
-                <td class="bg-purple-400 text-stone-50 px-4 py-2 rounded-md inline-block mb-4><input type="file" name="gambar_kelas" class="form-control" accept="image/*"></td>
+                <td class="bg-purple-400 text-stone-50 px-4 py-2 rounded-md inline-block mb-4"><input type="file" name="gambar_kelas" class="form-control" accept="image/*"></td>
             </tr>    
         </table>  
-        <button type="submit" class="bg-purple-600 px-5 py-2 rounded-full text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 ">Submit</button>  
-    </form>   
-    <form action="/kelas">
+        <form action="/kelas">
         @csrf
-        <button type="submit" class="bg-purple-600 px-5 py-2 rounded-full text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 ">Back</button>  
+        <button type="submit" class="bg-purple-600 w-36 ml-24 mt-3 px-5 py-2 rounded-md text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 inline-block ">Back</button>  
+        <button type="submit" class="bg-purple-600 w-40 mb-5 px-5 py-2 rounded-md text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 ">Submit</button>  
+    
+    
     </form>     
+ </form>   
 </div>
 </body>
 </html>

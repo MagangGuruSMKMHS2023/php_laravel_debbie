@@ -11,7 +11,7 @@
 @include('includes._header')
 <form action="/cari" method="get">
     <label for="cari" class="p-1 ml-8"></label>
-    <input type="text" placeholder="Cari Data" class="px-2 py-2 bg-violet-200 mt-3 rounded-full placeholder:text-zinc-500 placeholder:font-normal" id="cari" name="cari">
+    <input type="text" placeholder="Cari Data" class="px-2 py-2 bg-violet-200 rounded-full placeholder:text-zinc-500 placeholder:font-normal" id="cari" name="cari">
     <button type="submit" class="bg-purple-600 p-1 text-zinc-300 px-3 font-semibold inline-block ml-10 rounded shadow hover:bg-purple-900 focus:ring-purple-300">Search</button>
 </form>
 
@@ -23,38 +23,38 @@
         </ul>
     </div>
 @endif
-<table class="border-collapse border mt-3 border-slate-400 m-10">
+<table class="table-auto  w-full border mt-3 border-slate-400 m-10 ml-6">
 <thead>    
  <tr>
-        <th class="border p-4 border-slate-300 bg-slate-300 font-semibold">Id Kelas</th>
-        <th class="border p-4 border-slate-300 bg-slate-300 font-semibold">Nama Kelas</th>
-        <th class="border p-4 border-slate-300 bg-slate-300 font-semibold">Wali Kelas</th>
-        <th class="border p-4 border-slate-300 bg-slate-300 font-semibold">Ketua Kelas</th>
-        <th class="border p-4 border-slate-300 bg-slate-300 font-semibold">Kursi</th>
-        <th class="border p-4 border-slate-300 bg-slate-300 font-semibold">Meja</th>
-        <th class="border p-4 border-slate-300 bg-slate-300 font-semibold ">Gambar</th>
-        <th class="border p-7 border-slate-300 bg-slate-300 font-semibold">Aksi</th>
+        <th class="border p-4 border-slate-300 bg-slate-300 font-bold">Id Kelas</th>
+        <th class="border p-4 border-slate-300 bg-slate-300 font-bold">Nama Kelas</th>
+        <th class="border p-4 border-slate-300 bg-slate-300 font-bold">Wali Kelas</th>
+        <th class="border p-4 border-slate-300 bg-slate-300 font-bold">Ketua Kelas</th>
+        <th class="border p-4 border-slate-300 bg-slate-300 font-bold">Kursi</th>
+        <th class="border p-4 border-slate-300 bg-slate-300 font-bold">Meja</th>
+        <th class="border p-4 border-slate-300 bg-slate-300 font-bold ">Gambar</th>
+        <th class="border p-7 border-slate-300 bg-slate-300 font-bold">Aksi</th>
 </tr>
 </thead>
     <?php foreach($kelas as $gr) : ?>
     <tr>
-        <td class="border p-4"><?php echo $gr['id_kelas']; ?></td>
-        <td class="border p-4"><?php echo $gr['namakelas']; ?></td>
-        <td class="border p-4"><?php echo $gr['walikelas']; ?></td>
-        <td class="border p-4"><?php echo $gr['ketuakelas']; ?></td>
-        <td class="border p-4"><?php echo $gr['kursi']; ?></td>
-        <td class="border p-4"><?php echo $gr['meja']; ?></td>
+        <td class="border p-4 text-center"><?php echo $gr['id_kelas']; ?></td>
+        <td class="border p-4 text-center"><?php echo $gr['namakelas']; ?></td>
+        <td class="border p-4 text-center"><?php echo $gr['walikelas']; ?></td>
+        <td class="border p-4 text-center"><?php echo $gr['ketuakelas']; ?></td>
+        <td class="border p-4 text-center"><?php echo $gr['kursi']; ?></td>
+        <td class="border p-4 text-center"><?php echo $gr['meja']; ?></td>
         <td class="border p-4">
             <a href="{{ asset('upload_gambar/' . $gr->gambar_kelas)}}" target="blank">
                 <img src="{{ asset('upload_gambar/' . $gr->gambar_kelas) }}" alt="{{ $gr->namakelas }}" width="100" height="100">
         </a>    
         </td>    
-        <td>
-            <a href="/kelas/<?php echo $gr['id_kelas'];?>/edit" class= "border">Edit</a>
-            <form action="/kelas/{{ $gr->id_kelas }}" method="post">
+        <td class="border p-4 text-center">
+            <a href="/kelas/<?php echo $gr['id_kelas'];?>/edit" class= "text-cyan-500">Edit</a>
+            <form action="/kelas/{{ $gr->id_kelas }}" method="post" class="inline">
                 @csrf
                 @method("delete")
-                <input type="submit" value="Delete" class= "border">
+                <input type="submit" value="Delete" class= "text-orange-600">
             </form>
         </td>
     </tr>    

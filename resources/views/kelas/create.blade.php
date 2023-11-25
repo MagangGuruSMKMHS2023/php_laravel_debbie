@@ -37,14 +37,12 @@
             </tr>
             <tr>
                 <td><label for="gambar_kelas"></label></td>
-                <td class="bg-purple-400 text-stone-50 px-4 py-2 rounded-md inline-block mb-4"><input type="file" name="gambar_kelas" class="form-control" accept="image/*"required></td>
+                <td class="bg-purple-400 text-stone-50 px-4 py-2 rounded-md inline-block mb-4"><input type="file" name="gambar_kelas" class=" hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600" accept="image/*"required></td>
             </tr>
         </table>  
-        <button type="submit" class="bg-purple-600 px-5 py-2 rounded-full text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 ">Submit</button>  
+        <a href="/kelas" class="bg-purple-600 w-40 ml-24 mt-3 px-5 py-2 text-center rounded-md text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 inline-block">Back</a>
+        <button type="submit" class="w-40 bg-purple-600 px-5  py-2 mb-5 text-center rounded-md text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 ">Submit</button>  
     </form>   
-    <form action="/kelas">
-         <button type="submit" class="bg-purple-600 mt-3 px-5 py-2 rounded-full text-zinc-300 font-semibold font-inter hover:bg-purple-900 active:bg-purple-950 focus:ring focus:ring-purple-600 inline-block">Back</button>  
-    </form> 
     </div>    
 </body>
 </html>
