@@ -17,12 +17,12 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
             </svg>
         </div>
-        <input type="search" id="default-search" class="block w-full p-4 ps-10 text-m ml-10 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Cari Data Kelas...." required>
+        <input type="search" id="default-search" class="block w-full p-4 ps-14 text-m ml-6 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-800" placeholder="Cari Data Kelas...." required>
         <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-purple-500  hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-purple-900">Search</button>
     </div>
 </form>
 
-<a href="kelas/create" class="bg-purple-600 p-1 text-zinc-300 font-semibold inline-block mt-3 ml-10 px-3 rounded shadow hover:bg-purple-900" >Tambah</a>
+<a href="kelas/create" class="bg-purple-600 p-1 text-zinc-300 font-semibold inline-block mt-3 ml-6 px-3 rounded shadow hover:bg-purple-900" >Tambah</a>
 @if (\Session::has('success'))
     <div class="alert alert-success">
         <ul>
@@ -30,7 +30,7 @@
         </ul>
     </div>
 @endif
-<table class="table-auto  w-full border mt-3 border-slate-400 m-10 ml-6">
+<table class="table-auto w-full border mt-3 border-slate-400 m-10 ml-6">
 <thead>    
  <tr>
         <th class="border p-4 border-slate-300 bg-slate-300 font-bold">Id Kelas</th>
