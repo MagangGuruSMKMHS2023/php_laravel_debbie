@@ -6,8 +6,7 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <h1 class="text-2xl font-bold underline text-purple-700 text-center"> Halaman Menggunakan Tailwindcss</h1>   
- 
+   
 @include('includes._header')
 <form action="/cari" method="get">
     <label for="default-search" class="text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
