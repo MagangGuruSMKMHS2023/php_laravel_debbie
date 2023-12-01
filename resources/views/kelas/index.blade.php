@@ -10,19 +10,19 @@
  
 @include('includes._header')
 <form action="/cari" method="get">
-    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <label for="default-search" class="text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
     <div class="relative">
         <div class="absolute inset-y-0 ml-10 start-0 flex items-center ps-3 pointer-events-none">
             <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
             </svg>
         </div>
-        <input type="search" id="default-search" class="block w-full p-4 ps-14 text-m ml-6 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-800" placeholder="Cari Data Kelas...." required>
-        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-purple-500  hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-purple-900">Search</button>
+        <input type="search" id="default-search" class="block w-64 p-4 ps-14 text-m ml-6 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-800" placeholder="Cari Data Kelas...." required>
+        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-purple-500  hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-4 py-2 dark:bg-purple-400 dark:hover:bg-purple-600 dark:focus:ring-purple-900">Search</button>
     </div>
 </form>
 
-<a href="kelas/create" class="bg-purple-600 p-1 text-zinc-300 font-semibold inline-block mt-3 ml-6 px-3 rounded shadow hover:bg-purple-900" >Tambah</a>
+<a href="kelas/create" class="bg-purple-400 p-1 text-white font-semibold inline-block mt-3 ml-6 px-3 rounded shadow hover:bg-purple-900" >Tambah</a>
 @if (\Session::has('success'))
     <div class="alert alert-success">
         <ul>
