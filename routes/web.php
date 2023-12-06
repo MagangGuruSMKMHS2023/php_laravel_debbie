@@ -26,5 +26,6 @@ Route ::group(['middleware'=>['web']], function(){
     Route::put('/kelas/{id_kelas}',[KelasController::class,"update"]);
     Route::delete('/kelas/{id_kelas}',[KelasController::class,"delete"]);
     Route::get('/cari',[KelasController::class,"cari"]);
+    Route::get('/nilai/pdf',[KelasController::class,"pdf"]);
 
 });
